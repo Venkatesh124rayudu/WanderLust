@@ -1,0 +1,31 @@
+<% layout('/layouts/boilerplate') -%>
+
+<% if (allListings.length > 0) { %>
+    <div class="row mt-4 row-cols-lg-3 row-cols-sm-2 row-cols-xl-4">
+        
+      <% for (let listing of allListings) { %>
+        <a href="/listings/<%= listing._id %>">
+          <div class="card listing-card card-view">
+            <img src="<%= listing.image.url %>" class="card-img-top" alt="image">
+            <div class="card-body">
+              <b><p class="card-text"><%= listing.title %></b>
+              <br>
+              &#8377; <%= listing.price.toLocaleString("en-IN") %>/night
+            </p>
+            </div>
+          </div> 
+        </a>
+       
+      <% } %>
+      
+    </div>
+    <a class="btn btn-style" href="/listings">Explore</a>
+    <a class="btn btn-dark" href="/listings/new">Add your new home</a>
+<% } else { %>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="text-center">
+            <p>Your home is not available!</p>
+            <a class="btn btn-dark" href="/listings/new">Add your home</a>
+        </div>
+    </div>
+<% } %>

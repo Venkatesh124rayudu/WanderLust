@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+.navbar{
+    background-color: white;
+    height: 4rem;
+}
+.fa-compass{
+    color: rgb(226, 75, 75);
+    font-size: 1.6rem;
+}
+.nav-link{
+    color: #222222 !important;
+    background-color: white !important;
+}
+/* .navbar-nav{
+    border-bottom:2px solid black !important;
+} */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    margin: 1rem;
+    border-top:1px solid #b9b7b7 ;
+}
+.f-info-socials i{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-brand-name{
+    margin: 0.5rem;
+}
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem !important;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+    height: 20rem !important;
+}
+.card-body{
+    padding: 0px !important;
+}
+.row a{
+    text-decoration: none;
+}
+.btn-style{
+    background-color: rgb(226, 75, 75) !important;
+    border: none !important;
+    color: white !important;
+}
+.card-view {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both transform and opacity */
+}
+.card-view:hover{
+    transform: translateY(-0.5rem);
+	opacity: 0.9;
+}
+
+
+
